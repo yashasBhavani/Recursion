@@ -12,6 +12,17 @@ function fibs(number) {
     return fibsNum;
 }
 
-console.log(fibs(4));
+function fibsRec(number) {
+    if (number === 1) return [0];
+    if (number === 2) return [0,1];
 
-export {fibs};
+    let result = fibsRec(number - 1);
+    let length = result.length;
+    let nextNumber = result[length - 1] + result[length - 2];
+    
+    return [...result, nextNumber];
+}
+
+
+
+export {fibs,fibsRec};
