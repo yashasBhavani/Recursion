@@ -4,7 +4,7 @@
   "description": "This is a tutorial project , where I will be testing and solving problems regarding recursive functions.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
